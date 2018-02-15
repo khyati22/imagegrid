@@ -1,0 +1,36 @@
+<md-toolbar md-scroll-shrink ng-if="true" class="toolbar">
+  <div class="md-toolbar-tools">
+      <h3>
+          <span>Photo Splash</span>
+      </h3>
+  </div>
+  <md-progress-linear md-mode="query" ng-if="loading"></md-progress-linear>
+</md-toolbar>
+<!-- <div ng-repeat="item in allData">
+  <img ng-src="{{item.url}}">
+</div> -->
+
+<div class='md-padding imgContent' layout="row" layout-wrap>
+
+  <div ng-repeat="item in allData  | limitTo: 100">
+
+      <md-card flex-sm="25" flex-gt-sm="30" flex-gt-md="100" flex="100">
+          <img ng-src="{{item.thumbnailUrl}}">
+          <md-card-title>
+              <md-card-title-text>
+                  <span class="md-headline">{{item.thumbnailUrl}}</span>
+              </md-card-title-text>
+          </md-card-title>
+          <md-card-content>
+              <p>
+                 
+              </p>
+          </md-card-content>
+
+      </md-card>
+  </div>
+</div>
+
+<div class="loader" ng-if="loading" layout="row" layout-align="center center">
+  <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+</div>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image grid</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body ng-app="baseApp"  ng-cloak>
+
+    <ui-view></ui-view>
+
+
+</body>
+<!--Script area for libraries imported files-->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="node_modules/angular-animate/angular-animate.min.js"></script>
+<script src="node_modules/angular-aria/angular-aria.min.js"></script>
+<script src="node_modules/angular-messages/angular-messages.min.js"></script>
+<script src="node_modules/angular-material/angular-material.min.js"></script>
+<script src='node_modules/ng-infinite-scroll/build/ng-infinite-scroll.min.js'></script>
+<!--Script area for libraries imported files end here-->
+
+<!--script area for components and directives-->
+<script src="app/app.js"></script>
+<script src="app/app.config.js"></script>
+<script src="app/component/login/login.component.js"></script>
+<script src="app/service/imagegrid.service.js"></script>
+<script src="app/component/imagegrid/imagegrid.component.js"></script>
+<!--Script area for components and directives end here-->
+
+</html>
